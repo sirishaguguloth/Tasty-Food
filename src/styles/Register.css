@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.register{
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right top, rgb(214, 214, 214), rgb(100, 100, 100));
+  position: fixed;
+}
+
+.registerchilddivs {
+  width: 30vw;
+  height: 90%;
+ 
+}
+
+.registerformdiv {
+  background-color: #FDFFF3;
+ 
+}
+
+.registerimg {
+  background-image: url('../assets/loginimg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.registerwrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerform {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+.registerhead {
+  font-size: 2.5rem;
+}
+
+.registerdivs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerinputs {
+  padding-left: 1rem;
+  width: 70%;
+  height: 3rem;
+  border: 1px solid black;
+  outline: none;
+  border-left: none;
+  background-color: #FDFFF4;
+}
+
+.registericons {
+  max-width: 10%;
+  padding: 0 0.9rem;
+  height: 3rem;
+  border: 1px solid black;
+  border-right: none;
+  background-color: #FDFFF4;
+}
+.registersubmit {
+  width: 60%;
+  margin-right: 20px;
+  height: 3rem;
+  color:white;
+  background-color:blue;
+  border: none;
+  font-size: 1.3rem;
+}
+
+
+.registerredirect {
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: "odor mean chey";
+  margin-top: 1rem;
+}
+
+.registertologin {
+  color: #ea0808;
+  text-decoration: none;
+}
+
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+  .registerimg {
+      display: none;
+  }
+
+  .registerformdiv {
+      width: 90%;
+      height: 90vh;
+  }
+}
+
+/* Styles for tablet devices */
+@media (min-width: 481px) and (max-width: 768px) {
+  .registerimg {
+      display: none;
+  }
+
+  .registerformdiv {
+      width: 70%;
+      height: 90%;
+      margin-left: -5rem;
+  }
+}
+
+/* Styles for laptop devices */
+@media (min-width: 769px) and (max-width: 1024px) {}

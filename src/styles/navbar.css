@@ -1,0 +1,79 @@
+.navbar {
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.logo {
+    padding-left: 1rem;
+}
+.navwrap{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+
+.navlists {
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.listitems {
+    font-weight: 600;
+    font-size: 20px;
+    list-style-type: none;
+    font-family: "Lily Script One";
+}
+
+.navaction {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Lilita One";
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+}
+.icon{
+    display: none;
+    
+}
+@media (max-width: 480px) {
+   .navlists{
+    display: none;
+   }
+   .icon{
+    display: flex;
+    font-size: 3rem;
+    margin-left: 4rem;
+}
+  
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navwrap{
+        display: flex;
+        flex-direction: row;
+        gap: 27rem;
+    }
+    .navlists {
+        gap: 2.5rem;
+    }
+}
+@media (min-width: 1024px){
+    .navwrap{
+        display: flex;
+        flex-direction: row;
+        gap: 37rem;
+    }
+    .navlists {
+        gap: 3rem;
+    }
+}

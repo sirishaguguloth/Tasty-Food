@@ -1,0 +1,68 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+.contact{
+    background-image: url('../assets/contimg.jpg');
+    width: 100vw;
+    height: 85vh;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact::before{
+    content: "";
+    width: 100vw;
+    height: 85vh;
+    background: linear-gradient(black, gray);
+    opacity: 0.5;
+    position: absolute;
+    
+}
+.head{
+    color: white;
+    position: relative;
+    font-family: serif;
+    margin-top: -5rem;
+    
+
+}
+.head h1{
+    color:rgb(253, 111, 3);
+    font-size: 3rem;
+}
+.head h2{
+   
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: -0.2rem;
+    
+}
+.contacticons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    
+color: white;;
+position: absolute;
+margin-top: 10rem;
+    
+    
+}
+
+.conticon{
+
+  color: white;
+  position: absolute;
+  font-size: 2rem;
+ 
+}

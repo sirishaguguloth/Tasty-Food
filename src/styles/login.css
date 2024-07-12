@@ -1,0 +1,122 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right top, rgb(214, 214, 214), rgb(100, 100, 100));
+  position: fixed;
+}
+
+.loginchilddivs {
+  width: 30vw;
+  height: 70vh;
+ 
+}
+
+.loginformdiv {
+  background-color: #FDFFF3;
+}
+
+.loginimg {
+  background-image: url('../assets/loginimg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.loginwrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginform {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+.loginhead {
+  font-size: 2.5rem;
+}
+
+.inputdivs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logininputs {
+  padding-left: 1rem;
+  width: 70%;
+  height: 3rem;
+  border: 1px solid black;
+  outline: none;
+  border-left: none;
+  background-color: #FDFFF4;
+}
+
+.loginicons {
+  max-width: 10%;
+  padding: 0 0.9rem;
+  height: 3rem;
+  border: 1px solid black;
+  border-right: none;
+  background-color: #FDFFF4;
+}
+.loginsubmit {
+  width: 60%;
+  margin-right: 20px;
+  height: 3rem;
+  color:white;
+  background-color:blue;
+  border: none;
+  font-size: 1.3rem;
+}
+
+
+.registerredirect {
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: "odor mean chey";
+  margin-top: 1rem;
+}
+
+.logintoregister {
+  color: #ea0808;
+  text-decoration: none;
+}
+
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+  .loginimg {
+      display: none;
+  }
+
+  .loginformdiv {
+      width: 90%;
+      height: 80%;
+  }
+}
+
+/* Styles for tablet devices */
+@media (min-width: 481px) and (max-width: 768px) {
+  .loginimg {
+      display: none;
+  }
+
+  .loginformdiv {
+      width: 70%;
+      height: 60%;
+  }
+}
+
+/* Styles for laptop devices */
+@media (min-width: 769px) and (max-width: 1024px) {}

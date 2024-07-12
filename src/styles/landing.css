@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.landingimgs{
+    margin-top: 0.5rem;
+    overflow-y: hidden;
+    width: 100vw;
+
+}
+.landingimg{
+    background-size: cover;
+    background-position: center;
+  
+}
+.bg1,.bg2,.bg3,.bg4,.bg5{
+    width: 100vw;
+    height: 25vw;
+    background-size: cover;
+    background-position: center;
+}
+
+    /* .........*/
+    
+.cat{
+    margin-top: 2rem;
+    display: flex;
+   margin:0 0 1 1;
+}
+.catwrap{
+    background-color: black;
+    height: 40vh;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    
+}
+.catimg{
+    display: flex;
+    height: 80%;
+    width: 65%;
+    flex-direction: row;
+    background-color:rgb(170, 170, 45);
+   margin-left: 8rem;
+   display: flex;
+   gap: 5rem;
+   padding: 0.5rem;
+   border-radius: 1rem;
+   
+
+}
+.foodimg{
+    width: 10vw;
+    height: 20vh;
+    border-radius: 5rem;
+    border: 0.2rem solid #472401;
+    
+}
+.foodname{
+    margin-left: 2rem;
+}
+
+.promotionlandings{
+  margin-left:2rem;
+}
+.proimg{
+    
+    width: 22vw;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+    flex-direction: column;
+    display: flex;
+ background: #000;
+ margin-top: 1rem;
+
+}
+.proimgs{
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+@media (max-width: 480px) {
+    .bg1,.bg2,.bg3,.bg4,.bg5{
+        height: 50vh;
+    }
+    
+    .catimg{ 
+         gap: 0.5rem;
+         margin-left:2rem;
+         height: 50%;
+         width: 80vw;
+        
+    }
+    .foodimg{
+        height: 10vh;
+        width: 16vw;
+       }
+       .foodname{
+           margin-left: -0.1rem;
+       }
+       
+       .proimgs{
+        gap:1rem;
+    margin-left: -0.5rem;
+    }
+  }
+  
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    .bg1,.bg2,.bg3,.bg4,.bg5{
+        height: 50vh;
+    }
+    .catimg{
+        gap:2.8rem; 
+        margin-left:5rem; 
+        height: 50%;  
+    }
+    .foodimg{
+     height: 70%;
+
+    }
+    .proimgs{
+        margin-left: -1rem;
+        margin-right: 1rem;
+        gap: 1rem;
+    }
+    .foodname{
+        margin-left: -0.1rem;
+    }
+    
+    
+  }
+  
+  /* Styles for laptop devices */
+  @media (min-width: 769px) and (max-width: 1024px) {}

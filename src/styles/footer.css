@@ -1,0 +1,23 @@
+.footer{
+width: 99vw;
+height: 40vh;
+background-color: rgb(59, 58, 58);
+  margin: 10px;
+  margin-left: -0.5px;  
+  color: white;
+  overflow-y: hidden;
+
+}
+.footerhead,.footercontact{
+    margin-top: 1rem;
+   
+}
+.footericons{
+    margin-top: 2rem;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    font-size: 2rem;
+    gap:5rem;
+  
+}

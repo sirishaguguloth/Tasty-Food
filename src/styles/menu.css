@@ -1,0 +1,84 @@
+.menupage{
+    padding: 0;
+    margin: 0;
+}
+.menuwrap {
+    width: 100vw;
+    height: 40vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    color: white;
+}
+.menuheadimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    overflow-y: hidden;
+}
+.menuhead{
+    width: 50%;
+    height: 90%;
+    overflow-y: hidden;
+}
+
+.menudiv {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menuitemdiv {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 400px;
+    height: 200px;
+    background-color: #d1cfcf;
+}
+
+.menuitemp1 {
+    width: 50%;
+    height: 100%;
+}
+
+.menuitemp1img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    margin-top: 0.5rem;
+    margin-left: 0.3rem;
+}
+
+.menuitemtitle {
+    text-transform: capitalize;
+   font-family: style;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.menuitemprice {
+    color:rgb(224, 4, 4);
+    margin-bottom: 1.8rem;
+    margin-top: 0.4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.menuitemaddbtn {
+    background-color:rgb(141, 232, 5);
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+}
