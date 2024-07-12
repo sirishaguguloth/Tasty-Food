@@ -1,3 +1,17 @@
+.ordersuc{
+    color: #333;
+}
+.link{
+    color:black;
+  
+
+}
+.ordersucbtn{
+    margin-left: 15rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 /* Order.css */
 
 .orders {
