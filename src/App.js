@@ -19,7 +19,6 @@ import Payment from './pages/Payment';
 import Ordersuccess from './pages/Ordersuccess';
 import Orderfail from './pages/Orderfail';
 import Order from './pages/Order';
-import Load from './component/Loading';
 import Loading from './component/Loading';
 
 const Landing = lazy(() => import('./pages/Landing'));

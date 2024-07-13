@@ -11,7 +11,7 @@ import i4 from '../assets/contactimg.jpg';
 import { Link } from 'react-router-dom';
 
 export default function Landing() {
-    const[promotion1,setpromotion1]=useState([i1,i2,i3,i4]);// initialization for imgs
+    const[promotion1]=useState([i1,i2,i3,i4]);// initialization for imgs
     var settings = {
         dots: true,
         infinite: true,
