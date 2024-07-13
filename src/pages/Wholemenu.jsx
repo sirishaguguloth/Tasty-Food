@@ -60,7 +60,7 @@ export default function Wholemenu() {
                     ))}
                 </div>
             </div>
-             : <Navigate to={'/landing'} />
+             : <Navigate to={'/login'} />
         );
     }
 
