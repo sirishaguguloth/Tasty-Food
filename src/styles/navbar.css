@@ -1,6 +1,6 @@
 .navbar {
     width: 100vw;
-    height: 4rem;
+    height: 6rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,11 +10,16 @@
 
 .logo {
     padding-left: 1rem;
+    overflow-y: hidden;
+   margin-left: 2rem;
+   font-weight: bold;
+   margin: 2px;
 }
 .navwrap{
     display: flex;
     flex-direction: row;
-    gap: 5rem;
+    gap: 2rem;
+   
 }
 
 
@@ -71,7 +76,7 @@
     .navwrap{
         display: flex;
         flex-direction: row;
-        gap: 37rem;
+        gap: 34rem;
     }
     .navlists {
         gap: 3rem;

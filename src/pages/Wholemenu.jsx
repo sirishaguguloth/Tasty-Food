@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link ,useNavigate} from 'react-router-dom';
 import { useCart } from '../context/Context';
 import '../styles/menu.css'; // Import your menu styles
 
 export default function Wholemenu() {
     const { cart, setcart } = useCart();
     const [products, setProducts] = useState([]);
+    const Navigate = useNavigate();
 
     useEffect(() => {
         axios.get("https://tastyfood-backend.onrender.com/getproducts")
@@ -35,6 +36,7 @@ export default function Wholemenu() {
         const filteredProducts = products.filter(item => item.category === categoryName);
 
         return (
+            localStorage.getItem("userid") ?
             <div>
                 <h2 style={{ paddingLeft: "2rem" }}>{categoryName}</h2>
                 <div className="menudiv">
@@ -58,6 +60,7 @@ export default function Wholemenu() {
                     ))}
                 </div>
             </div>
+             : <Navigate to={'/landing'} />
         );
     }
 
@@ -69,6 +72,8 @@ export default function Wholemenu() {
             {renderCategory("breakfast")}
             {renderCategory("milkshakes")}
             <ToastContainer />
+           
         </div>
+       
     )
 }

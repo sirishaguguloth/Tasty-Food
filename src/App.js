@@ -1,25 +1,31 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Navbar from './component/Navbar';
-import Landing from './pages/Landing';
+//import Landing from './pages/Landing';
 import Footer from './component/Footer';
 import Adminlogin from './pages/admin/Adminlogin';
 import Home from './pages/admin/Home';
 import Adminorder from './pages/admin/Adminorder';
 import Contact from './pages/Contact';
-import Menu from './pages/Menu';
-import Wholemenu from './pages/Wholemenu';
+//import Menu from './pages/Menu';
+//import Wholemenu from './pages/Wholemenu';
 import Products from './pages/admin/Products';
-import Cart from './pages/Cart';
+//import Cart from './pages/Cart';
 import Context from './context/Context';
 import Address from './pages/Address';
 import Payment from './pages/Payment';
 import Ordersuccess from './pages/Ordersuccess';
 import Orderfail from './pages/Orderfail';
 import Order from './pages/Order';
+import Load from './component/Loading';
+import Loading from './component/Loading';
 
+const Landing = lazy(() => import('./pages/Landing'));
+const Wholemenu = lazy(() => import('./pages/Wholemenu'));
+const Menu = lazy(() => import('./pages/Menu'));
+const Cart = lazy(() => import('./pages/Cart'))
 
 
 function withnav() {
@@ -37,7 +43,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-     
+      <Suspense fallback={<Loading/>}>
       <Context>
         <Routes>
           <Route exact path='/' Component={withnav}>
@@ -82,7 +88,7 @@ function App() {
           <Route path='/products' Component={Products} />
         </Routes>
         </Context>
-      
+        </Suspense>
       </BrowserRouter>
     </div>
   );
