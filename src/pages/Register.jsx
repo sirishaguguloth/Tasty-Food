@@ -16,7 +16,7 @@ export default function Register() {
     }
     const submitHnalder = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:5000/register", register).then(res => {toast(res.data); return navigate('/login')}).catch(err => toast(err.response.data));
+        axios.post("https://tastyfood-backend.onrender.com/register", register).then(res => {toast(res.data); return navigate('/login')}).catch(err => toast(err.response.data));
     }
     return (
         <div onSubmit={submitHnalder} className='register'>

@@ -15,7 +15,7 @@ export default function Login() {
     }
     const submitHnalder = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:5000/login", login).then(res => {localStorage.setItem("userid", res.data); return navigate('/')}).catch(err => toast(err.response.data));
+        axios.post("https://tastyfood-backend.onrender.com/login", login).then(res => {localStorage.setItem("userid", res.data); return navigate('/')}).catch(err => toast(err.response.data));
     }
     return (
         <div className='login'>

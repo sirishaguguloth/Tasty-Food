@@ -14,13 +14,13 @@ export default function Cart() {
     }, 0);
 
     const quatityHandler = ({ cartid, quantity }) => {
-        axios.put(`http://localhost:5000/updateproduct/${cartid}`, { quantity })
+        axios.put(`https://tastyfood-backend.onrender.com/updateproduct/${cartid}`, { quantity })
             .then(res => toast(res.data))
             .catch(err => toast(err.response.data));
     }
 
     const removefromcart = (id) => {
-        axios.delete(`http://localhost:5000/removefromcart/${id}/${localStorage.getItem("userid")}`)
+        axios.delete(`https://tastyfood-backend.onrender.com/removefromcart/${id}/${localStorage.getItem("userid")}`)
             .then(res => {
                 setcart(res.data);
                 toast("Removed successfully");

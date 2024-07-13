@@ -13,13 +13,13 @@ export default function Products() {
   }
   const submitHandler = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:5000/addproduct", product).then(res => { toast(res.data) }).catch(err => toast(err.response.data));
+    axios.post("https://tastyfood-backend.onrender.com/addproduct", product).then(res => { toast(res.data) }).catch(err => toast(err.response.data));
   }
   const productDelete = (id) => {
-    axios.delete(`http://localhost:5000/deleteproduct/${id}`).then(res => { toast(res.data); window.location.reload() }).catch(err => toast(err.response.data));
+    axios.delete(`https://tastyfood-backend.onrender.com/deleteproduct/${id}`).then(res => { toast(res.data); window.location.reload() }).catch(err => toast(err.response.data));
   }
   useEffect(() => {
-    axios.get("http://localhost:5000/getproducts").then(res => { setproducts(res.data) }).catch(err => toast(err.response.data));
+    axios.get("https://tastyfood-backend.onrender.com/getproducts").then(res => { setproducts(res.data) }).catch(err => toast(err.response.data));
   }, [])
   return (
     localStorage.getItem("adminlogin") ?

@@ -7,7 +7,7 @@ export default function Order() {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/getorders/${localStorage.getItem("userid")}`)
+        axios.get(`https://tastyfood-backend.onrender.com/getorders/${localStorage.getItem("userid")}`)
             .then(res => setOrders(res.data))
             .catch(err => toast.error(err.response.data));
     }, []);

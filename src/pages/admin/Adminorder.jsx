@@ -7,13 +7,13 @@ export default function Adminorders() {
     const [orders, setOrders] = useState([]);
 
     const changeStatus = ({ id, status }) => {
-        axios.put(`http://localhost:5000/updateorders/${id}`, { status })
+        axios.put(`https://tastyfood-backend.onrender.com/updateorders/${id}`, { status })
             .then(res => toast(res.data))
             .catch(err => toast(err.response.data));
     }
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/getorders`)
+        axios.get(`https://tastyfood-backend.onrender.com/getorders`)
             .then(res => setOrders(res.data))
             .catch(err => toast(err.response.data));
     }, []);

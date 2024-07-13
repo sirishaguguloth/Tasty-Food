@@ -7,7 +7,7 @@ import milkshake from '../assets/loginimg.jpg';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
-import { useCart, useProducts } from '../context/Context';
+import { useCart } from '../context/Context';
 import '../styles/menu.css'; // Import your menu styles
 
 export default function Menu() {
@@ -16,7 +16,7 @@ export default function Menu() {
     const { cart, setcart } = useCart();
 
     useEffect(() => {
-        axios.get("http://localhost:5000/getproducts")
+        axios.get("https://tastyfood-backend.onrender.com/getproducts")
             .then(res => {
                 setProducts(res.data);
             })
@@ -28,7 +28,7 @@ export default function Menu() {
     const filterProducts = products.filter(item => item.category === category);
 
     const addtocart = (id) => {
-        axios.post("http://localhost:5000/addtocart", { userid: localStorage.getItem("userid"), productid: id, quantity: 1 })
+        axios.post("https://tastyfood-backend.onrender.com/addtocart", { userid: localStorage.getItem("userid"), productid: id, quantity: 1 })
             .then(res => {
                 setcart(res.data);
                 toast("Added to cart");

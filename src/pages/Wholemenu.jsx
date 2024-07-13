@@ -11,7 +11,7 @@ export default function Wholemenu() {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:5000/getproducts")
+        axios.get("https://tastyfood-backend.onrender.com/getproducts")
             .then(res => {
                 setProducts(res.data);
             })
@@ -21,7 +21,7 @@ export default function Wholemenu() {
     }, []);
 
     const addtocart = (id) => {
-        axios.post("http://localhost:5000/addtocart", { userid: localStorage.getItem("userid"), productid: id, quantity: 1 })
+        axios.post("https://tastyfood-backend.onrender.com/addtocart", { userid: localStorage.getItem("userid"), productid: id, quantity: 1 })
             .then(res => {
                 setcart(res.data);
                 toast("Added to cart");

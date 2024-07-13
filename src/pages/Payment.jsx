@@ -32,7 +32,7 @@ export default function Payment() {
 
     // Function to place order
     const placeOrder = () => {
-        axios.post("http://localhost:5000/placeanorder", {
+        axios.post("https://tastyfood-backend.onrender.com/placeanorder", {
             userid: localStorage.getItem("userid"),
             cart: cart,
             total: total,
